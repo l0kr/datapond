@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+duckpond/__init__.py
+duckpond/repository.py
+duckpond.egg-info/PKG-INFO
+duckpond.egg-info/SOURCES.txt
+duckpond.egg-info/dependency_links.txt
+duckpond.egg-info/requires.txt
+duckpond.egg-info/top_level.txt
+duckpond/assets/__init__.py
