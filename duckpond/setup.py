@@ -5,11 +5,12 @@ setup(
     packages=find_packages(exclude=["duckpond_tests"]),
     install_requires=[
         "dagster",
+        "dagit",
         "duckdb",
         "pandas",
         "sqlescapy",
         "lxml",
         "html5lib"
     ],
-    extras_require={"dev": ["dagit", "pytest", "localstack", "awscli", "awscli-local"]},
+    extras_require={"dev": ["dagit", "pytest"]},
 )

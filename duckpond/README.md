@@ -1,5 +1,11 @@
 # duckpond
 
+> ⚠️⚠️⚠️ When problem with dagster_graphql install gql with version below or something newer
+
+```bash
+ pip install gql[all]==3.4.0
+```
+
 This is a [Dagster](https://dagster.io/) project scaffolded with [`dagster project scaffold`](https://docs.dagster.io/getting-started/create-new-project).
 
 ## Getting started

@@ -2,7 +2,7 @@ from dagster import load_assets_from_package_module, repository
 
 from duckpond import assets
 
-from duckpond.datapond import DuckDB
+from datapond import DuckDB
 from dagster import resource
 
 @resource(config_schema={"vars": str})
@@ -21,19 +21,20 @@ set s3_url_style='path';
     }
 )
 
-from duckpond.duckpond import DuckPondIOManager
+from datapond import DuckPondIOManager
 from dagster import io_manager
 
 @io_manager(required_resource_keys={"duckdb"})
 def duckpond_io_manager(init_context):
     return DuckPondIOManager("datalake", init_context.resources.duckdb)
 
-    from dagster import (
+from dagster import (
     load_assets_from_package_module,
     repository,
     with_resources,
 )
-from jaffle import assets
+
+from duckpond import assets
 
 @repository
 def duckpond():
